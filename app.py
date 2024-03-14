@@ -18,11 +18,11 @@ if hist_button: # al hacer clic en el botón
     st.plotly_chart(fig, use_container_width=True)
     
     # crear una casilla de verificación
-build_scatter = st.checkbox('Construir el gráfico de disperción')
+build_scatter = st.checkbox('Seleccionar para generar el gráfico de dispersión')
 
 if build_scatter: # si la casilla de verificación está seleccionada
         #Escribir un mensaje
-    st.write('Construir un grafico de disperción utilizando la columna odómetro y precio')
+    st.write('Gráfico de dispersión utilizando la columna odómetro y precio')
         
         #Crear un gráfico de disperción
     fig1 = px.scatter(car_data, x="odometer", y="price", color='model_year') # crear un gráfico de dispersión
